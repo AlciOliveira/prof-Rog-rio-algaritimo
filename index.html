@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vamos somar</h1>
+    <p>'****** SOMAR de 1 até 200 ******</p>
+    <p>Inicio = 1</p>
+   
+    <input type="number" name="textn2" id="txtfinal">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resulatdo</div>
+    <script>
+        function somar(){
+            var tn2 = window.document.querySelector('input#txtfinal')//ou desse jeito
+            var res = window.document.getElementById('res')
+            var n2 = Number(tn2.value)
+            var s =  1 + n2
+            res.innerHTML = `A soma entre 1 e ${n2} = ${s} dividido por 2 =  ${s/2}`
+        }
+    </script>
+</body>
+</html>
